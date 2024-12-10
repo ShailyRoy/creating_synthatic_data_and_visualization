@@ -12,7 +12,6 @@ In this extra credit assignment, you will create an interactive dashboard using 
 - Parsing and processing hierarchical data.  
 - Visualizing hierarchical relationships with a **Tree Layout**.  
 - Dynamically generating and visualizing a **Force-Directed Graph** for selected nodes.  
-- Adding interactivity with tooltips, transitions, and highlighting.
 
 
 ## Dataset Instructions  
@@ -122,12 +121,10 @@ D3 provides the **`d3.group()`** function to group data easily. Then, use `Array
    - Add text labels next to each node to display the `name` property.
 
 4. **Add Interactivity**  
-   - **Hover**: Show a tooltip displaying the node’s name and metric (for employees).  
    - **Click**: Add a click event to trigger the Force-Directed Graph.
 
 **Hints:**  
 - Use SVG `path` elements to draw links and `circle` elements for nodes.  
-- Use the `.on("mouseover")` and `.on("mouseout")` events for tooltips.  
 - Use `d3.selectAll()` to select nodes and attach interactivity.
 
 ---
@@ -149,8 +146,7 @@ D3 provides the **`d3.group()`** function to group data easily. Then, use `Array
    - Draw **nodes** as circles and **links** as lines connecting them.  
    - Position the nodes dynamically based on the force simulation.
 
-4. **Add Interactivity**  
-   - **Hover**: Show a tooltip with the employee's name and metric.  
+4. **Add Interactivity**   
    - **Drag**: Allow nodes to be repositioned interactively by dragging.
 
 **Hints:**  
@@ -161,31 +157,29 @@ D3 provides the **`d3.group()`** function to group data easily. Then, use `Array
 
 ### Step 4: Tooltips and Final Touches (1 point)  
 
+1. **Drag Nodes (+2 points):**  
+   - Enable dragging for nodes in the Force-Directed Graph.  
+   - Use `d3.drag()` to update node positions dynamically during the simulation.
+
+---
+
+## Extra Credit (Up to 4 Bonus Points)  
 1. **Add Smooth Transitions**  
    - Add transitions to fade in nodes and links in both the Tree Layout and the Force-Directed Graph.
+   - **Hover**: Show a tooltip displaying the node’s name and metric (for employees).  
 
 2. **Apply Color Scheme**  
    - Use a unique color for each **Company** and lighter shades for **Departments**.  
    - Apply neutral or gray colors to Employee nodes.
 
-**Hints:**  
-- Use D3’s `scaleOrdinal()` to assign colors.  
-- Use `transition()` for smooth animations.
-
----
-
-## Extra Credit (Up to 4 Bonus Points)  
-
-1. **Drag Nodes (+2 points):**  
-   - Enable dragging for nodes in the Force-Directed Graph.  
-   - Use `d3.drag()` to update node positions dynamically during the simulation.
-
-2. **Highlight Selected Node (+2 points):**  
+3. **Highlight Selected Node (+2 points):**  
    - When a node is clicked in the Tree Layout:  
      - Highlight the selected node with a larger border or a unique color.  
      - Reset other nodes to the default style.
 
 **Hints:**  
+- Use D3’s `scaleOrdinal()` to assign colors.  
+- Use `transition()` for smooth animations.
 - Use `.classed()` to apply or remove a CSS class that highlights the node.  
 
 ---
@@ -212,5 +206,5 @@ Your final dashboard will include:
 | Step 1: Data Loading       | 3      |  
 | Step 2: Tree Layout        | 3      |  
 | Step 3: Force-Directed Graph | 3      |  
-| Step 4: Tooltips & Transitions | 1      |  
+| Step 4: Transitions | 1      |  
 | **Extra Credit**           | 4      |  
