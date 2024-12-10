@@ -40,7 +40,7 @@ To generate your dataset, follow these steps:
    - **Company**: Custom List (values like Amazon, Google).  
    - **Department**: Custom List (e.g., Training, Services, Operations).  
    - **Name**: Full Name.  
-   - **Metric**: Number (0–150).
+   - **Metric**: Number.
      ![sample](images/sample.png)  
 
 4. **Set Rows**: Generate at least 10 number of rows to ensure repetitive `Company` and `Department` values.
