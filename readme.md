@@ -35,8 +35,8 @@ To generate your dataset, follow these steps:
      ```
 
 3. **Configure Fields**:  
-   Mockaroo will auto-detect the types, but ensure:  
-   - **Company**: Custom List (values like Zoomlounge, Voonix).  
+   Mockaroo will auto-detect the types. Then you need to select the Type and customize as per your will:  
+   - **Company**: Custom List (values like Amazon, Google).  
    - **Department**: Custom List (e.g., Training, Services, Operations).  
    - **Name**: Full Name.  
    - **Metric**: Number (20–150).  
