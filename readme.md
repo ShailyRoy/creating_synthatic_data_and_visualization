@@ -16,6 +16,7 @@ In this extra credit assignment, you will create an interactive dashboard using 
 
 
 ## Dataset Instructions  
+You can create your own dataset which will have Company (String), Department (String), Name (String), Metric (Numeric) or 
 
 To generate your dataset, follow these steps:  
 
@@ -39,9 +40,9 @@ To generate your dataset, follow these steps:
    - **Company**: Custom List (values like Amazon, Google).  
    - **Department**: Custom List (e.g., Training, Services, Operations).  
    - **Name**: Full Name.  
-   - **Metric**: Number (20–150).  
+   - **Metric**: Number (0–150).  
 
-4. **Set Rows**: Generate good number of rows to ensure repetitive `Company` and `Department` values.
+4. **Set Rows**: Generate at least 10 number of rows to ensure repetitive `Company` and `Department` values.
 
 5. **Download the File**: Export it as **`data.csv`**.
 
