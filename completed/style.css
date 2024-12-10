@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+h1, h3 {
+    margin: 10px 0;
+}
+
+.myContainer {
+    margin: auto;
+    width: 100%;
+}
+
+form {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.myContainer {
+    margin: auto;
+    width: 1210px;
+}
+
+#tree_div, #forcegraph_div {
+    float: left;
+    width: 600px;
+    padding: 10px;
+}
+
+#forcegraph_div {
+    float: right;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+
+
+.highlighted {
+    stroke: red;
+    stroke-width: 3px;
+}
+.node circle {
+    fill: steelblue;
+    stroke: #333;
+    stroke-width: 1.5px;
+}
+
+.node text {
+    font-size: 10px;
+    text-anchor: start; /* Aligns text to the left */
+    pointer-events: none; /* Prevents tooltips conflicts */
+}
+
+
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2px;
+}
+
+.force-node circle {
+    fill: orange;
+    stroke: #555;
+    stroke-width: 1.5px;
+    cursor: move;
+}
+
+.highlighted {
+    stroke: red;
+    stroke-width: 3px;
+}
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 6px;
+    background: lightgrey;
+    border: 1px solid black;
+    border-radius: 3px;
+    pointer-events: none;
+    font-size: 12px;
+}

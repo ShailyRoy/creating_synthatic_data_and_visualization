@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title>Tree Layout to Force-Directed Graph - CSE 578 - Fall 2024</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="shailyro.js" defer></script>
+</head>
+<body>
+    <div class="myContainer">
+        <h1 class="text-center">Tree Layout to Force-Directed Graph</h1>
+        <h3 class="text-center">Shaily Roy - shailyro@asu.edu</h3>
+        <hr>
+
+        <form class="border border-dark rounded p-2 mb-2 bg-light shadow-sm">
+            <label for="dataInput">Upload your data file here</label>
+            <input type="file" id="dataInput" class="form-control mb-2 mt-1">
+            <button type="button" class="btn btn-dark mb-1" id="loadDataBtn">Load Data</button>
+        </form>  
+
+        <div id="tree_div" class="border rounded shadow-sm bg-light">
+            <span>Tree Layout</span>
+            <svg id="tree_svg"></svg>
+        </div>
+
+        <div id="forcegraph_div" class="border rounded shadow-sm bg-light">
+            <span>Force-Directed Graph</span>
+            <svg id="forcegraph_svg"></svg>
+        </div>
+    </div>
+</body>
+</html>
