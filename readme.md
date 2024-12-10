@@ -155,7 +155,7 @@ D3 provides the **`d3.group()`** function to group data easily. Then, use `Array
 
 ---
 
-### Step 4: Tooltips and Final Touches (1 point)  
+### Step 4: Final Touches (1 point)  
 
 1. **Drag Nodes (+2 points):**  
    - Enable dragging for nodes in the Force-Directed Graph.  
@@ -191,11 +191,11 @@ Your final dashboard will include:
 2. A **Force-Directed Graph** that dynamically visualizes employees under the selected node.  
 
 **Final Screenshot Example:**  
-![Tree Layout](images/tree_example.png)  
-![Force Graph](images/force_example.png)  
+![Tree Layout](images/final.png)  
+
 
 **GIF Demonstrating Interaction:**  
-![Interaction Example](images/task.gif)  
+![Interaction Example](images/sample.gif)  
 
 ---
 

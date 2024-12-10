@@ -1,15 +1,21 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
 }
 
 h1, h3 {
     margin: 10px 0;
+    text-align: center;
 }
 
 .myContainer {
     margin: auto;
     width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 form {
@@ -17,19 +23,12 @@ form {
     text-align: center;
 }
 
-.myContainer {
-    margin: auto;
-    width: 1210px;
-}
-
 #tree_div, #forcegraph_div {
     float: left;
-    width: 600px;
+    width: 50%;
+    height: 90vh;
     padding: 10px;
-}
-
-#forcegraph_div {
-    float: right;
+    box-sizing: border-box;
 }
 
 svg {
@@ -40,24 +39,19 @@ svg {
     border-radius: 3px;
 }
 
-
-
-.highlighted {
-    stroke: red;
-    stroke-width: 3px;
-}
 .node circle {
     fill: steelblue;
     stroke: #333;
     stroke-width: 1.5px;
+    r: 12px;
 }
 
 .node text {
     font-size: 10px;
-    text-anchor: start; /* Aligns text to the left */
-    pointer-events: none; /* Prevents tooltips conflicts */
+    text-anchor: start;
+    transform: rotate(45deg);
+    pointer-events: none;
 }
-
 
 .link {
     fill: none;
@@ -70,11 +64,7 @@ svg {
     stroke: #555;
     stroke-width: 1.5px;
     cursor: move;
-}
-
-.highlighted {
-    stroke: red;
-    stroke-width: 3px;
+    r: 12px;
 }
 
 .tooltip {
@@ -86,4 +76,9 @@ svg {
     border-radius: 3px;
     pointer-events: none;
     font-size: 12px;
+}
+
+.highlighted {
+    stroke: red;
+    stroke-width: 3px;
 }
