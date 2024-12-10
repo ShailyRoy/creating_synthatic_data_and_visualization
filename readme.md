@@ -25,13 +25,13 @@ To generate your dataset, follow these steps:
    - Click **"Generate Fields Using AI"** and input the following example data (you can customize it if you want):  
      ```
      Company, Department, Name, Metric
-     Zoomlounge, Training, Alex Smith, 45
-     Zoomlounge, Services, John Doe, 80
-     Voonix, Business Development, Mary Jane, 60
-     Trilith, Training, Samuel Ross, 90
-     Zoomlounge, Training, Emma Brown, 70
-     Plambee, Operations, Rachel Green, 55
-     Trilith, Services, Jake White, 85
+     Google, Training, Alex Smith, 45
+     Google, Services, John Doe, 80
+     Amazon, Training, Mary Jane, 60
+     Amazon, Training, Samuel Ross, 90
+     Google, Training, Emma Brown, 70
+     Google, Services, Rachel Green, 55
+     Amazon, Services, Jake White, 85
      ```
 
 3. **Configure Fields**:  
