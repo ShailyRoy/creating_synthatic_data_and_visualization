@@ -40,7 +40,8 @@ To generate your dataset, follow these steps:
    - **Company**: Custom List (values like Amazon, Google).  
    - **Department**: Custom List (e.g., Training, Services, Operations).  
    - **Name**: Full Name.  
-   - **Metric**: Number (0–150).  
+   - **Metric**: Number (0–150).
+     ![sample](images/sample.png)  
 
 4. **Set Rows**: Generate at least 10 number of rows to ensure repetitive `Company` and `Department` values.
 
@@ -60,39 +61,13 @@ When you first run the page, you should see the empty interface. Add your name a
 ### Step 1: Load and Transform Data (3 points)  
 
 1. **Load the Dataset**  
-   - Use `d3.csv()` to load the `data.csv` file. Each row of the file will become an object with properties: `Company`, `Department`, `Name`, and `Metric`.  
-   - Print the data to the console to ensure it is loaded correctly.
+   -Load the `csv` file. Each row of the file will become an object with properties: `Company`, `Department`, `Name`, and `Metric`.  
      
 #### 2. Transform the Flat Dataset into a Hierarchical Structure  
 You need to group the data **hierarchically** as follows:  
 - **Company** (Top level) → **Department** (Second level) → Employees (Leaf nodes).  
 
 D3 provides the **`d3.group()`** function to group data easily. Then, use `Array.from()` to convert the grouped data into a structure that can be used for a Tree Layout.
-
-**Example Code:**  
-```javascript
-d3.csv("data.csv").then(data => {
-  const groupedData = {
-    name: "All Companies", 
-    children: Array.from(
-      d3.group(data, d => d.Company), 
-      ([company, departments]) => ({
-        name: company,
-        children: Array.from(
-          d3.group(departments, d => d.Department), 
-          ([department, employees]) => ({
-            name: department,
-            children: employees.map(d => ({ name: d.Name, value: +d.Metric }))
-          })
-        )
-      })
-    )
-  };
-
-  console.log(groupedData); 
-  window.hierData = groupedData; 
-});
-```
 
 **Output Structure Example:**  
 ```json
@@ -131,11 +106,6 @@ d3.csv("data.csv").then(data => {
   ]
 }
 ```
-
-**🔍 Hint:** Use `console.log()` to inspect the structure and verify the data format before proceeding.
-
-
-3. Save the transformed hierarchical structure as a global variable (e.g., `window.hierData`) for use in later steps.
 
 
 ### Step 2: Create the Tree Layout (3 points)  
