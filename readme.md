@@ -1,8 +1,6 @@
-# Extra Credit Assignment: Tree Layout to Force-Directed Graph  
+Tree Layout to Force-Directed Graph  
 
-**Name:** Shaily Roy  
-**Email:** shailyro@asu.edu  
-
+This was an extra credit hw where I had to write  the question first and the provide answers
 ---
 
 ## Overview  
